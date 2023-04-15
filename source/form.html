@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -99,15 +100,15 @@
               </li>
               <li class="form__item">
                 <input class="form__input" type="checkbox" name="programm" id="water" value="loss" >
-                <label class="form__value" for="water">питьевая вода</label>
+                <label class="form__value-additionally" for="water">питьевая вода</label>
             </li>
               <li class="form__item">
                   <input class="form__input" type="checkbox" name="programm" value="gain" id="milk">
-                  <label class="form__value" for="milk">молоко</label>
+                  <label class="form__value-additionally" for="milk">молоко</label>
               </li>
               <li class="form__item">
                   <input class="form__input" type="checkbox" name="programm" value="need advice" id="vitamins">
-                  <label class="form__value" for="vitamins">витамины</label>
+                  <label class="form__value-additionally" for="vitamins">витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -118,39 +119,39 @@
       </section>
     </main>
     <footer class="main-footer">
+      <div class="main-footer__contacts contacts">
+        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__address">ул. Большая
+          Конюшенная, д. 19/8<br>
+          Санкт-Петербург</p>
+        <img class="contacts__map" src="img/map-mobile.jpg" alt="Карта Петербурга">
+      </div>
       <div class="main-footer__wrapper">
-        <div class="main-footer__contacts contacts">
-          <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">ул. Большая
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург</p>
-          <img class="contacts__map" src="img/map-mobile.jpg" alt="Карта Петербурга">
-        </div>
-        <a class="main-footer__logo logo" href="#">
-          <img class="main-footer__logo-text" src="img/footer-logo.svg" width="101" height="18" alt="Логотип Cat energy.">
-        </a>
-      </div>
-      <div class="main-footer__social social">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img class="social__image" src="img/vkontakte.svg" alt="vkontakte">
-              <span class="visually-hidden">Вконтакте.</span>
-            </a>
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social__image" src="img/youtube.svg" alt="youtube">
-              <span class="visually-hidden">Youtube.</span>
-            </a>
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <img class="social__image" src="img/telegram.svg" alt="telegram">
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <span class="copyright__text">HTML Academy</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="img/html-academy.svg" alt="html-academy">
-          <span class="visually-hidden">Ссылка на академию</span>
-        </a>
-      </div>
+      <a class="main-footer__logo logo" href="#">
+        <img class="main-footer__logo-text" src="img/footer-logo.svg" width="101" height="18" alt="Логотип Cat energy.">
+      </a>
+    <div class="main-footer__social social">
+      <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+        <img class="social__image" src="img/vkontakte.svg" alt="vkontakte">
+        <span class="visually-hidden">Вконтакте.</span>
+      </a>
+      <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+        <img class="social__image" src="img/youtube.svg" alt="youtube">
+        <span class="visually-hidden">Youtube.</span>
+      </a>
+      <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+        <img class="social__image" src="img/telegram.svg" alt="telegram">
+        <span class="visually-hidden">Телеграм.</span>
+      </a>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <span class="copyright__text">HTML Academy</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__image" src="img/html-academy.svg" alt="html-academy">
+        <span class="visually-hidden">Ссылка на академию</span>
+      </a>
+    </div>
+  </div>
     </footer>
   </body>
 </html>
