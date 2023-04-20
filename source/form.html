@@ -77,9 +77,10 @@
               </li>
             </ul>
           </fieldset>
+            </div>
           <fieldset class="form__group">
             <legend class="form__title"> Контактные данные (владельца кота)</legend>
-            <ul class="form__group-list">
+            <ul class="form__group-list contact-details">
               <li class="form__group-item">
             <label class="form__name" for="email">E-mail:<sup>*</sup></label>
             <input class="form__field" type="email" id="email" placeholder="E-mail" value="kuklachev@gmail.com" required>
@@ -94,9 +95,9 @@
             <legend class="form__title">Комментарий</legend>
             <textarea class="form__text" rows="6" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group ">
             <legend class="form__title">Дополнительно</legend>
-            <ul class="form__list">
+            <ul class="form__list additionally">
               <li class="form__item">
                   <input class="form__input" type="checkbox" name="programm" id="sugar" value="loss" checked>
                   <label class="form__value" for="sugar">сахарозаменитель</label>
@@ -117,16 +118,17 @@
           </fieldset>
           <button class="form__button button button--primary" type="submit">Отправить заявку</button>
           <small class="form__text-small"><sup>*</sup> — Обязательные поля</small>
-          </div>
           </form>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__contacts contacts">
-        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая
-          Конюшенная, д. 19/8<br>
-          Санкт-Петербург</p>
+        <div class="contacts__text">
+          <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__address">ул. Большая
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург</p>
+          </div>
         <img class="contacts__map" src="img/map-mobile.jpg" alt="Карта Петербурга">
       </div>
       <div class="main-footer__wrapper">

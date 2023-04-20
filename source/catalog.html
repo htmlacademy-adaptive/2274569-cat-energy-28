@@ -38,7 +38,8 @@
     </header>
     <main class="main-container">
       <h1 class="catalog__title">Каталог продукции</h1>
-      <section class="catalog card">
+      <div class="catalog__wrapper">
+      <section class="catalog catalog__card">
         <img class="card__image" src="img/catalog-1-desktop.png" alt="Cat Energy с курицей">
         <h2 class="card__title">Cat Energy<br> PRO 500 г</h2>
         <dl class="card__list">
@@ -51,7 +52,7 @@
         </dl>
         <a class="card__order button button--primary" href="#" >Заказать</a>
       </section>
-      <section class="catalog card">
+      <section class="catalog catalog__card">
         <img class="card__image" src="img/catalog-1-desktop.png" alt="Cat Energy с курицей">
         <h2 class="card__title">Cat Energy<br> PRO 1000 г</h2>
         <dl class="card__list">
@@ -64,7 +65,7 @@
         </dl>
         <a class="card__order button button--primary" href="#">Заказать</a>
       </section>
-      <section class="catalog card">
+      <section class="catalog catalog__card">
         <img class="card__image" src="img/catalog-1-desktop.png" alt="Cat Energy с курицей">
         <h2 class="card__title">Cat Energy<br> PRO 500 г</h2>
         <dl class="card__list">
@@ -77,7 +78,7 @@
         </dl>
         <a class="card__order button button--primary" href="#">Заказать</a>
       </section>
-      <section class="catalog card">
+      <section class="catalog catalog__card">
         <img class="card__image" src="img/catalog-1-desktop.png" alt="Cat Energy с курицей">
         <h2 class="card__title">Cat Energy<br> PRO 500 г</h2>
         <dl class="card__list">
@@ -90,7 +91,7 @@
         </dl>
         <a class="card__order button button--primary" href="#">Заказать</a>
       </section>
-      <section class="catalog card">
+      <section class="catalog catalog__card">
         <img class="card__image" src="img/catalog-1-desktop.png" alt="Cat Energy с курицей">
         <h2 class="card__title">Cat Energy<br> SLIM 500 г</h2>
         <dl class="card__list">
@@ -103,7 +104,7 @@
         </dl>
         <a class="card__order button button--primary" href="#">Заказать</a>
       </section>
-      <section class="catalog card">
+      <section class="catalog catalog__card">
         <img class="card__image" src="img/catalog-1-desktop.png" alt="Cat Energy с курицей">
         <h2 class="card__title">Cat Energy<br> SLIM 500 г</h2>
         <dl class="card__list">
@@ -116,7 +117,7 @@
         </dl>
         <a class="card__order button button--primary" href="#">Заказать</a>
       </section>
-      <section class="catalog card">
+      <section class="catalog catalog__card">
         <img class="card__image" src="img/catalog-1-desktop.png" alt="Cat Energy с курицей">
         <h2 class="card__title">Cat Energy<br> SLIM 500 г</h2>
         <dl class="card__list">
@@ -128,12 +129,13 @@
           <dd class="card__detail">500 ₽</dd>
         </dl>
         <a class="card__order button button--primary" href="#">Заказать</a>
+      </section>
       <section class="catalog card-more">
         <h2 class="card-more__title">Показать еще 100500 товаров</h2>
         <p class="card-more__description">На самом деле вкусов гораздо больше!</p>
         <button class="button card-more__button">показать все</button>
       </section>
-      </section>
+    </div>
       <section class="additional">
         <h2 class="additional__title">Дополнительные товары</h2>
         <ul class="additional__list">
@@ -178,10 +180,12 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__contacts contacts">
-        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая
-          Конюшенная, д. 19/8<br>
-          Санкт-Петербург</p>
+        <div class="contacts__text">
+          <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__address">ул. Большая
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург</p>
+          </div>
         <img class="contacts__map" src="img/map-mobile.jpg" alt="Карта Петербурга">
       </div>
       <div class="main-footer__wrapper">

@@ -1,7 +1,17 @@
 .promo {
   font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+  }
 }
 
 .promo__title {
