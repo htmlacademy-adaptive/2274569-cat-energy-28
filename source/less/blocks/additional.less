@@ -1,7 +1,214 @@
+.additional {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .additional__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  margin-top: 25px;
+  padding-bottom: 36px;
+  position: relative;
+  background: #ffffff;
+  width: 247px;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 37px;
+    margin-bottom: 80px;
+  }
+}
+
+.additional__title::after{
+  content: "";
+    position: absolute;
+    top: 20%;
+    width: 100vw;
+    height: 3px;
+    margin-top: 2px;
+    background: #68b738;
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: 50%;
+    }
+}
+
+.additional__title::before{
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 3px;
+    margin-top: 2px;
+    background: #68b738;
+    z-index: -1;
+    right: 0;
+  }
+}
+
+.additional__item {
+  border-bottom: 1px solid #D9D9D9;
+  position: relative;
+}
+
+.additional__list {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 75%;
+    margin-bottom: 86px;
+  }
+}
+
+.additional__list .card {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    align-items: baseline;
+    border: 1px solid #CDCDCD;
+    padding: 26px 38px 28px 38px;
+    max-width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 15px 0 17px 0;
+    align-items: baseline;
+  }
+}
+
+.additional__gift {
+  border-bottom: none;
+  background-image: url("../img/gift-background.png");
+  width: 280px;
+  height: 290px;
+  position: relative;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/gift-background-tablet.png");
+    width: 707px;
+    height: 200px;
+    margin-bottom: 76px;
+    margin-top: 69px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/gift-background.png");
+    width: 245px;
+    height: 289px;
+    margin: 0;
+  }
+}
+
+.additional__item .card__title {
+  padding: 0;
+  margin: 12px 0;
+  max-width: 103px;
+  min-width: 100px;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    max-width: 161px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 161px;
+    max-width: auto;
+    margin: 0;
+  }
+}
+
+.additional__item:first-child {
+  border-top: 1px solid #CDCDCD;
+}
+
+.additional__item .card__order {
+  position: relative;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    flex: 1;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 0;
+  }
+}
+
+.additional__item .card__table-item {
+  min-width: 275px;
+  margin-bottom: 14px;
+  border: none;
+}
+
+.additional__icon {
+  position: absolute;
+  top: 59px;
+  left: 101px;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+    left: 77px;
+  }
+}
+
+.additional-card__table-item {
+  color: #444444;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.additional-card__table {
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 33%;
+    margin: 0;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }

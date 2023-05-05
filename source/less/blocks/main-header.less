@@ -10,16 +10,34 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-header__form {
+  border-bottom: 1px solid #D9D9D9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.main-header__catalog {
+  border-bottom: 1px solid #D9D9D9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }
 
 .main-header__logo {
   display: flex;
   flex-direction: row;
-  height: 38px;
+  height: 65px;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    height: 52px;
+    height: 54px;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,20 +45,200 @@
   }
 }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
+.main-header__button-cover {
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 10px 20px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: none;
+  }
+}
+
+.header__logo--mobile {
+  padding: 10px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.header__logo--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding: 53px 0 0 110px ;
+  }
+}
+
+.header__logo--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-left: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-text {
+  padding-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav {
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    width: 62.14%;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 51px;
+    width: 588px;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 19px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#000000, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#000000, 30%),
+    0 16px 0 0 fade(#000000, 30%);
+
+    .main-nav--nojs .main-nav__toggle {
+      display: none;
+    }
+}
+
+.main-nav--opened .main-nav__toggle {
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#000000, 30%);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__link {
+    display: none;
+  }
+
+}
+
+.main-nav--index .site-list__link {
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
   }
 }
 
 .site-list__link {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 24px 0 22px 0;
   text-decoration: none;
   color: #000000;
+  border-top: 1px solid #E6E6E6;
 
-  /*@media (min-width: @desktop-width) {
-    color: #ffffff;
-  }*/
+  @media (min-width: @tablet-width) {
+    padding: 18px 0 0 0;
+    border: none;
+  }
+}
+
+.site-list__link:last-child {
+  @media (min-width: @tablet-width) {
+  padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 110px;
+  }
+}
+
+.site-list__link--active{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-nav .site-list__link--active::after {
+
+  @media (min-width: @tablet-width) {
+    content: '';
+    border: 1px solid #68B738;
+  }
+}
+
+
+.main-nav--index .site-list__link--active::after {
+
+  @media (min-width: @tablet-width) {
+    content: '';
+    border: 1px solid #68B738;
+  }
+
+  @media (min-width: @desktop-width) {
+  content: '';
+  border: 1px solid #ffffff;
+  }
 }
