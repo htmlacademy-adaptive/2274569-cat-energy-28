@@ -27,7 +27,7 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   padding: 14px 0 13px 20px;
   width: 100%;
 
@@ -39,7 +39,7 @@
 }
 
 .form__group {
-  border:0 none;
+  border: 0 none;
   margin: 0;
 
   padding: 0 20px;
@@ -55,7 +55,7 @@
 
 .form__group:nth-child(2) {
   @media (max-width: @mobile-width-only) {
-    border-top: 1px solid #D9D9D9;
+    border-top: 1px solid #d9d9d9;
   }
 }
 
@@ -113,7 +113,7 @@
   margin: 22px 0 19px 0;
 
   @media (min-width: @tablet-width) {
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
     padding: 30px;
     margin: 0;
   }
@@ -135,44 +135,44 @@
 
 .form__title {
   font-weight: 400;
-    font-size: 24px;
-    line-height: 1;
-    font-family: "Oswald", "Arial", sans-serif;
-    color: #111111;
-    position: relative;
-    display: inline-block;
-    padding-right: 22px;
-    padding-left: 40px;
-    margin-left: -40px;
-    margin-bottom: 35px;
-    background: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  position: relative;
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 40px;
+  margin-left: -40px;
+  margin-bottom: 35px;
+  background: #ffffff;
 }
 
 .title-line--width {
   margin-right: 76px;
 }
 
-.form__title::after{
+.form__title::after {
   content: "";
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    height: 3px;
-    margin-top: 2px;
-    background: #68b738;
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 3px;
+  margin-top: 2px;
+  background: #68b738;
+  z-index: -1;
 }
 
-.form__title::before{
+.form__title::before {
   content: "";
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    height: 3px;
-    margin-top: 2px;
-    background: #68b738;
-    z-index: -1;
-    right: 0;
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 3px;
+  margin-top: 2px;
+  background: #68b738;
+  z-index: -1;
+  right: 0;
 }
 
 .form__value-additionally {
@@ -189,6 +189,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: 15px;
+  }
 }
 
 .form__wrapper {
@@ -244,15 +250,15 @@
   height: 150px;
 }
 
-.form__text-small {
-  margin-bottom: 32px;
-
+.form__button {
   @media (min-width: @tablet-width) {
-    margin: 0;
-    margin-top: 15px;
+    padding: 14px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 188px;
   }
 }
-
 
 .form-button__wrapper {
   margin-top: 40px;

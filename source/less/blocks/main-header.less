@@ -15,7 +15,7 @@
 }
 
 .main-header__form {
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -23,7 +23,7 @@
 }
 
 .main-header__catalog {
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -69,7 +69,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    padding: 53px 0 0 110px ;
+    padding: 53px 0 0 110px;
   }
 }
 
@@ -143,14 +143,12 @@
     0 8px 0 0 fade(#000000, 30%),
     0 16px 0 0 fade(#000000, 30%);
 
-    .main-nav--nojs .main-nav__toggle {
-      display: none;
-    }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
-
-
   &::before,
   &::after {
     content: "";
@@ -181,7 +179,6 @@
   .main-nav--closed .site-list__link {
     display: none;
   }
-
 }
 
 .main-nav--index .site-list__link {
@@ -197,7 +194,7 @@
   padding: 24px 0 22px 0;
   text-decoration: none;
   color: #000000;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: @tablet-width) {
     padding: 18px 0 0 0;
@@ -207,7 +204,7 @@
 
 .site-list__link:last-child {
   @media (min-width: @tablet-width) {
-  padding-right: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -215,30 +212,28 @@
   }
 }
 
-.site-list__link--active{
+.site-list__link--active {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .main-nav .site-list__link--active::after {
-
   @media (min-width: @tablet-width) {
-    content: '';
-    border: 1px solid #68B738;
+    content: "";
+    border: 1px solid #68b738;
   }
 }
 
 
 .main-nav--index .site-list__link--active::after {
-
   @media (min-width: @tablet-width) {
-    content: '';
-    border: 1px solid #68B738;
+    content: "";
+    border: 1px solid #68b738;
   }
 
   @media (min-width: @desktop-width) {
-  content: '';
-  border: 1px solid #ffffff;
+    content: "";
+    border: 1px solid #ffffff;
   }
 }
