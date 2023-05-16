@@ -1,13 +1,14 @@
 .advantages {
   padding: 20px;
   padding-top: 0;
+  padding-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px 45px 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px 71px 110px;
+    padding: 0 110px 47px 110px;
   }
 }
 
@@ -55,13 +56,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 30px;
-    justify-content: space-between;
+    gap: 54px 64px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -94,6 +95,10 @@
     background-image: url("../img/1.png");
     background-repeat: no-repeat;
     background-position: 125px 0;
+
+    @media (min-width: @desktop-width) {
+      padding-right: 17px;
+    }
   }
 
   .advantages__item-2 {
