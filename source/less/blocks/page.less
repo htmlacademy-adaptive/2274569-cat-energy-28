@@ -13,9 +13,14 @@
 
 .page__body-index {
   @media (min-width: @desktop-width) {
-    background-image: url("../img//backgroud-desktop.jpg");
+    background-image: url("../img//background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-desktop@2x.png");
+      background-size: 720px 694px;
+    }
   }
 }
 
