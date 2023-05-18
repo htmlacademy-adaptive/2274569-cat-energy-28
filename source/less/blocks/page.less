@@ -38,6 +38,17 @@
   text-align: center;
   background-color: #68b738;
   color: #ffffff;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #ffffff30;
+    background-color: #5eaa2f;
+  }
 
   @media (max-width: @mobile-width-only) {
     padding: 11px 44px;

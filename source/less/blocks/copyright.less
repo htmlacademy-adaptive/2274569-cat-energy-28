@@ -8,3 +8,25 @@
   color: #444444;
   padding-top: 10px;
 }
+
+
+.copyright__link {
+  text-decoration: none;
+  display: contents;
+
+  &:hover,
+  &:focus {
+    stroke: #68b738;
+    fill: #68b738;
+  }
+}
+
+.copyright {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 40px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
