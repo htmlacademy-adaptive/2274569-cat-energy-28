@@ -43,6 +43,15 @@
   flex-direction: row;
   height: 65px;
   justify-content: space-between;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     height: 54px;
@@ -188,6 +197,15 @@
   text-decoration: none;
   color: #000000;
   border-top: 1px solid #e6e6e6;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 18px 0 0 0;
