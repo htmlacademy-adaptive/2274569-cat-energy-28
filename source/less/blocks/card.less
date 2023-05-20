@@ -18,7 +18,7 @@
 }
 
 .card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -36,11 +36,12 @@
     max-width: 150px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 12px;
   }
 }
 
 .card__table {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -61,47 +62,61 @@
   position: relative;
 }
 
-.card__image--desktop {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-}
-
-.card__image--mobile {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.card__image-500--mobile {
-  width: 68px;
+.card__image-500 {
+  width: auto;
   height: 86px;
   padding-top: 14px;
-}
-
-.card__image-500--desktop {
-  width: 161px;
-  height: 172px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -45px;
+    width: 161px;
+    height: 172px;
+    top: -57px;
+    right: -8%;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 161px;
+    height: 172px;
+    left: -10px;
+    top: -66px;
   }
 }
 
-.card__image-1000--mobile {
+.card__image-500--micro {
+  @media (max-width: @mobile-width-only) {
+    height: 78px;
+    padding-top: 27px;
+  }
+}
+
+.card__image-500--last {
+  @media (max-width: @mobile-width-only) {
+    height: 84px;
+    padding-top: 22px;
+  }
+}
+
+.card__image-1000 {
   width: 84px;
   height: 100px;
   padding-top: 11px;
-}
-
-.card__image-1000--desktop {
-  width: 168px;
-  height: 206px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -73px;
+    width: 172px;
+    height: 206px;
+    top: -82px;
+    left: -16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 172px;
+    height: 196px;
+    left: -13px;
+    top: -91px;
   }
 }
 
@@ -119,20 +134,25 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 180px;
+    width: 165px;
   }
 }
 
 .card__detail {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    text-align: end;
+    width: 60px;
+  }
 }
 
 .card__term {
   padding: 0;
 
-  @media (min-width: @tablet-width) {
-    width: 67%;
+  @media (min-width: @desktop-width) {
+    width: 131px;
   }
 }
 
@@ -153,6 +173,7 @@
   @media (min-width: @tablet-width) {
     top: 71px;
     left: 422px;
+    text-align: start;
   }
 
   @media (min-width: @desktop-width) {

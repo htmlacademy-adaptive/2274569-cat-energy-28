@@ -3,12 +3,16 @@
   padding: 25px 20px 40px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 43px 30px 101px 30px;
+    padding: 22px 30px 101px 30px;
     background-color: #ffffff;
+    background-image: url("../img/example-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 110px 75px 110px;
+    background: none;
   }
 }
 
@@ -17,15 +21,89 @@
 }
 
 .example__image-slider {
+  position: relative;
+  margin-top: 20px;
+  height: 256px;
+
+  @media (min-width: 769px) {
+    background-color: #eaeaea;
+    margin-top: 255px;
+    min-height: 462px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
+    height: 0;
+    min-height: 0;
+  }
+}
+
+.example__slider-button {
+  position: absolute;
+  background: none;
+  background-image: url("../img/curtain.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 256px;
+  border: none;
+  left: 43%;
+  z-index: 1;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/curtain-tablet.svg");
+    height: 512px;
+    top: -257px;
+    left: 335px;
+  }
+
   @media (min-width: @desktop-width) {
+    top: -522px;
+    left: 920px;
+  }
+}
+
+.example__slider--fat-cat {
+  width: 286px;
+  height: 256px;
+
+  @media (min-width: @tablet-width) {
     position: absolute;
-    right: 110px;
-    top: 0;
+    top: -100%;
+    left: 10%;
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -522px;
+    left: 659px;
+  }
+}
+
+.example__slider--slim-cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 286px;
+  height: 256px;
+
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+    top: -100%;
+    left: 10%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -522px;
+    left: 659px;
   }
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -45,7 +123,7 @@
 }
 
 .example__description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -67,7 +145,7 @@
 }
 
 .example__item-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -81,7 +159,7 @@
 }
 
 .example__item-description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -109,7 +187,7 @@
 
 
 .example__cost {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -129,6 +207,8 @@
     line-height: 20px;
     width: auto;
     text-align: start;
+    display: flex;
+    gap: 67px;
   }
 }
 
@@ -146,6 +226,10 @@
     gap: 42px;
     margin-bottom: 104px;
     margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
   }
 }
 
@@ -172,9 +256,11 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    padding-bottom: 235px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
+    padding-bottom: 0;
   }
 }

@@ -11,7 +11,7 @@
 }
 
 .programs__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -31,7 +31,7 @@
 }
 
 .programs__description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -85,13 +85,22 @@
 }
 
 .programs__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   margin-left: 19px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -114,6 +123,7 @@
 
   @media (min-width: @desktop-width) {
     min-height: 374px;
+    width: 570px;
   }
 }
 
@@ -122,14 +132,14 @@
 }
 
 .programs__item-image--weight-loss {
-  top: 24px;
+  top: 21px;
   left: 22px;
   width: 50px;
   height: 53px;
 
   @media (min-width: @tablet-width) {
-    top: 81px;
-    right: 62px;
+    top: 80px;
+    right: 61px;
     left: auto;
     width: 200px;
     height: 211px;
@@ -145,7 +155,7 @@
 }
 
 .programs__item-image--weight-gain {
-  top: 27px;
+  top: 24px;
   left: 13px;
   width: 67px;
   height: 50px;

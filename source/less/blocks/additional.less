@@ -11,7 +11,7 @@
 }
 
 .additional__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -28,6 +28,13 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 37px;
+    margin-bottom: 80px;
+    margin-top: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 16px;
+    padding: 0;
     margin-bottom: 80px;
   }
 }
@@ -73,7 +80,7 @@
 
   @media (min-width: @desktop-width) {
     width: 75%;
-    margin-bottom: 86px;
+    margin-bottom: 82px;
   }
 }
 
@@ -89,14 +96,14 @@
     height: auto;
     align-items: baseline;
     border: 1px solid #cdcdcd;
-    padding: 26px 38px 28px 38px;
+    padding: 12px 38px 28px 38px;
     max-width: 100%;
   }
 
   @media (min-width: @desktop-width) {
     border: none;
     border-bottom: 1px solid #d9d9d9;
-    padding: 15px 0 17px 0;
+    padding: 17px 0 17px 0;
     align-items: baseline;
   }
 }
@@ -110,6 +117,11 @@
   padding: 0;
   margin-bottom: 35px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-background@2x.png");
+    background-size: 280px 290px;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/gift-background-tablet.png");
     width: 707px;
@@ -117,6 +129,11 @@
     margin-bottom: 76px;
     margin-top: 69px;
     border: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background-tablet@2x.png");
+      background-size: 707px 200px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -124,12 +141,17 @@
     width: 245px;
     height: 289px;
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background@2x.png");
+      background-size: 245px 289px;
+    }
   }
 }
 
 .additional__item .card__title {
   padding: 0;
-  margin: 12px 0;
+  margin: 9px 0;
   max-width: 103px;
   min-width: 100px;
   text-align: start;
@@ -190,11 +212,17 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    gap: 50px;
+    justify-content: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 111px;
   }
 }
 
 .additional-card__table {
-  margin-bottom: 12px;
+  margin-bottom: -3px;
 
   @media (min-width: @tablet-width) {
     width: 50%;
