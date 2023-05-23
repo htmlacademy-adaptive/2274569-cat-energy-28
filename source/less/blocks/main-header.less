@@ -191,7 +191,7 @@
 }
 
 .main-nav--nojs .site-list__link {
-  @media (@mobile-width-only) {
+  @media (max-width:@mobile-width-only) {
     min-height: 0;
     display: block;
     position: static;
@@ -266,7 +266,7 @@
 
 .main-header--index::after {
   @media (min-width: @desktop-width) {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 50%;
