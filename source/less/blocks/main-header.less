@@ -22,7 +22,7 @@
   }
 }
 
-.main-header__form {
+.main-header--form {
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
@@ -73,7 +73,7 @@
   }
 }
 
-.header__logo-image {
+.main-header__logo-image {
   padding: 10px 20px;
 
   @media (min-width: @tablet-width) {
@@ -183,6 +183,21 @@
   }
 }
 
+.main-nav--nojs {
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-nav--nojs .site-list__link {
+  @media (max-width: @mobile-width-only) {
+    min-height: 0;
+    display: block;
+    position: static;
+  }
+}
+
 .main-nav--index .site-list__link {
   @media (min-width: @desktop-width) {
     color: #ffffff;
@@ -246,5 +261,28 @@
   @media (min-width: @desktop-width) {
     content: "";
     border: 1px solid #ffffff;
+  }
+}
+
+.main-header--index::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    min-height: 694px;
+    top: 0;
+    right: 0;
+    left: inherit;
+    background-image: url("../img//background-desktop.jpg");
+    background-color: #63a73a;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-desktop@2x.png");
+    }
   }
 }
